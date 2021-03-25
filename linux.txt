@@ -68,4 +68,25 @@ chmod
 -- editor
 vi
 
- 
+-- Buscar archivo
+grep
+
+  ---- alguno ejemplos
+   grep ‘ˆd’ text recupera las líneas que comienzan por d.
+   grep ‘ˆ[ˆd]’ text recupera las líneas que no comienzan por d.
+   grep -v ‘ˆC’ file1 > file2 quita las líneas de file1 que comienzan por C y lo copia en file2.
+   
+-- imprimir
+lpr
+
+-- comprimir archivos
+tar 
+gzip 
+
+-- redirecciones y tuberias
+  (>) redirige la salida estándar hacia el archivo indicado y en caso de no existir se crea.
+  (>>) redirige la salida estándar hacia otro archivo, pero añadiendo dicha salida al final de ese archivo, sin sobrescribir el contenido original.
+  (<) redirige la entrada estándar desde un determinado archivo.
+  Una tubería (|) permite comunicar la salida estándar de un comando con la entrada estándar de otro. Por ejemplo, ls | mail juan envía a juan una lista de los archivos del sistema. Con el operador de tubería se pueden empalmar tantos comandos como se desee.
+  
+  
