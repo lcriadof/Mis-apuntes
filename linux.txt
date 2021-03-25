@@ -36,3 +36,26 @@ mkdir [nombre subdir]
 cp [path y nombre fichero origen] [path y nombre fichero destino]
 
   También se puede usar como cp file1 file2 namedir que hace copias de file1 y file2 en el directorio
+  
+-- Cambio de nombre de archivos
+ mv [nombre origen] [nombre destino]
+ 
+ -- [path y nombre fichero origen] [path y nombre fichero destino]
+ rm
+ 
+ -- Enlaces a archivos
+ Un mismo archivo puede estar repetido con más de un nombre. También es posible tener un mismo archivo con varios nombres distintos y poder acceder a él desde más de un directorio. Esto último se denomina enlaces múltiples a un archivo y la forma de crearlo es mediante el comando ln: ln file1 file2.
+ 
+ Los archivos enlazados a otro se borran como los archivos normales, de manera que si se borra el archivo original permanece su contenido en los archivos enlazados. 
+ 
+-- Características de un archivo
+file
+
+-- Permisos de un archivo
+chmod 
+
+-- Visualización sin formato de archivos
+cat
+
+
+ 
