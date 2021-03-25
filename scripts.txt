@@ -1,1 +1,4 @@
+# Creación de scripts
 
+-- Variables y parámetros
+   Se indican anteponiendo al identificador el símbolo $
