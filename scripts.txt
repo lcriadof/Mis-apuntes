@@ -1,8 +1,10 @@
 # Creación de scripts
 
 -- Variables
-   Crear: [identificador]=[valor]
+   Crear: [identificador]=[valor] o
+          export [identificador]="[valor]"
    Acceso: anteponiendo al identificador el símbolo $[identificador]
+          echo $[identificador]
    Borrado: unset [identificador]
    
    -- variables predefinidas
