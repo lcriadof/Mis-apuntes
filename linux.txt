@@ -54,8 +54,18 @@ file
 -- Permisos de un archivo
 chmod 
 
--- Visualización sin formato de archivos
-cat
+-- visualizadores
+  ---- Visualización sin formato de archivos
+  cat
 
+  ---- Visualizador formateado
+  pr
+
+  ---- Visualizador pantalla a pantalla
+  more
+  less
+
+-- editor
+vi
 
  
