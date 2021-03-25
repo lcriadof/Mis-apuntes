@@ -1,4 +1,16 @@
 # Creación de scripts
 
--- Variables y parámetros
-   Se indican anteponiendo al identificador el símbolo $
+-- Variables
+   Crear: [identificador]=[valor]
+   Acceso: anteponiendo al identificador el símbolo $[identificador]
+   Borrado: unset [identificador]
+   
+   -- variables predefinidas
+  LOGNAME	Nombre del usuario.
+  HOME	Directorio de trabajo del usuario actual.
+  PATH	Caminos usados para ejecutar órdenes o programas.
+  PWD	   Directorio activo.
+  TERM	El tipo de la terminal actual.
+  SHELL	Shell actual.
+  
+  
