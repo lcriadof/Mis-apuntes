@@ -16,3 +16,16 @@
   SHELL	Shell actual.
   
   
+-- Comillas dobles y simples
+
+Pueden usarse comillas simples o dobles cuando se asignan caracteres que contengan espacios y caracteres especiales.
+Comillas dobles siempre que una variable hace referencia al valor de otra.
+  ejemplo de esto último: var="Hola Linux"
+                          var2="$var y Scripts de Shell"
+                          
+-- Arrays
+Crear e inicializar un array: nombre_array=(val1 val2 val3 ...)
+Consultar todos los elementos: ${#nombre_array[*]} o ${#nombre_array[@]}
+    Si al referenciar a un array no se utiliza subíndice se considera que se está referenciando a su primer elemento.
+    Para conocer el tamaño en bytes del array se utiliza #${nombre_array[x]}, donde x puede ser un subíndice, o bien los caracteres * o @.
+    
