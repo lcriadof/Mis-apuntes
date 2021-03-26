@@ -29,3 +29,16 @@ Consultar todos los elementos: ${#nombre_array[*]} o ${#nombre_array[@]}
     Si al referenciar a un array no se utiliza subíndice se considera que se está referenciando a su primer elemento.
     Para conocer el tamaño en bytes del array se utiliza #${nombre_array[x]}, donde x puede ser un subíndice, o bien los caracteres * o @.
     
+    ejemplos:
+    mamifero[0]='perro'
+    mamifero[1]='gato'
+    echo ${mamifero[1]}
+   
+    oviparo=("loro" "gallina" "pato" "ganso" "abeja")
+    #imprimir elementos de un array
+    echo ${oviparo[*]}
+    
+    #imprimir total de elementos del array
+    echo ${#oviparo[*]}
+    
+    
