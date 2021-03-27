@@ -41,4 +41,13 @@ Consultar todos los elementos: ${#nombre_array[*]} o ${#nombre_array[@]}
     #imprimir total de elementos del array
     echo ${#oviparo[*]}
     
-    
+-- Órdenes internas de la Shell
+echo: printea en pantalla
+read: es un input or teclado
+
+ejemplos:
+echo -n "Introduzca un valor para var1: "
+read var1
+echo "var1 = $var1"
+
+
