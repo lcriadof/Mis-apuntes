@@ -1,6 +1,8 @@
 Comandos básicos linux
 ------------------------------------
 
+--Muestra el nombre de la máquina.
+hostname
 
 -- Cambio de directorio:
 cd [nombre directorio]
@@ -22,6 +24,13 @@ ls -l filename muestra toda la información (fecha, permisos) sobre el archivo.
 ls -color muestra el contenido del directorio coloreado: verde para los ejecutables, azul para las carpetas, fucsia para las imágenes, rojo para los comprimidos, etc.
 ls -l muestra toda la información de cada archivo, incluyendo protecciones, tamaño y fecha de creación o del último cambio introducido, etc.
 ls -cr el directorio ordenando inversamente por fechas
+
+ejemplos:
+ls -R/usr
+Lista todos los archivos del directorio usr y sus subdirectorios 
+
+ls /dev/tty?? ?
+Lista todos los archivos del directorio dev que empiecen por tty y tengan 5 caracteres.
 
 -- creacion fichero
 touch [nombre fichero]
@@ -53,6 +62,13 @@ file
 
 -- Permisos de un archivo
 chmod 
+
+ejemplo:
+chmod u-w,g-w,a-w $HOME/PRUEBA/dir2?
+Elimina todos los permisos de escritura (propietario, grupo, otros) del directorio dir2.
+
+-- nos permite cambiar de propietario en archivos y directorios de linux.
+chown 
 
 -- visualizadores
   ---- Visualización sin formato de archivos
