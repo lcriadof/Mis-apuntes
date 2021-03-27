@@ -50,4 +50,102 @@ echo -n "Introduzca un valor para var1: "
 read var1
 echo "var1 = $var1"
 
+--test
+es una orden que permite evaluar si una expresión es verdadera o falsa
 
+
+-- ****************  Condicionales
+
+-- if
+if [expresión]
+then
+   ...órdenes a ejecutar si se cumple la condición...
+elif [expresión]
+then
+   ...órdenes a ejecutar si se cumple la condición...
+else
+   ....órdenes a ejecutar en caso contrario ...
+fi
+
+ejemplo:
+directorio=$(pwd)    #Asiga la salida del comando pwd a la variable directorio
+if [ "$directorio" = "/root" ]; then
+     echo "Directorio actual: $directorio"
+else
+     echo "Directorio actual diferente de: /root"
+fi
+
+
+-- case
+case $var in
+v1) …  #Acción a realizar si var toma el valor v1
+;;
+v2|v3) …#Acción a realizar si var toma el valor v2 o v3
+;;
+*) …# Caso por defecto
+
+ejemplo:
+echo -n "Escribe un número entre 1 y 5: "
+read x
+case $x in
+     1) echo "Tecleaste el número uno.";;
+     2) echo "Tecleaste el número dos.";;
+     3) echo "Tecleaste el número tres.";;
+     4) echo "Tecleaste el número cuatro.";;
+     5) echo "Tecleaste el número cinco.";;
+     *) echo "Error, debias escribir un número entre 1 y 5";;
+esac
+;;
+
+
+-- ****************  Bucles
+
+-- while
+while [ expresión ] # Mientras la expresión sea cierta ...
+do
+  ...instrucciones dentro del bucle ...
+done
+
+-- until
+
+El bucle until es similar al bucle while, la diferencia es que el código se ejecuta mientras la expresión se evalúe como falsa.
+
+until [ expresión ] # Mientras la expresión sea falsa ...
+do
+  ...instrucciones dentro del bucle ...
+done
+
+-- for
+for var in lista #Por cada valor en la estructura lista se ejecuta una iteración.
+do
+ ...instrucciones dentro del bucle ...
+done
+ 
+ ejemplo:
+for i in 10 30 70
+do
+  echo $i
+done
+
+-- funciones
+Para declarar una función:
+
+function nombre:
+{ mi_código }
+
+ejemplo:
+# Se define la función hola
+function hola {
+  echo ¡Hola!
+}
+
+
+hola # Se llama a la función hola desde otro punto del programa
+
+Se pueden definir funciones con parámetros:
+function e {
+  echo $1
+}
+
+Se podría invocar como:
+e Hola
