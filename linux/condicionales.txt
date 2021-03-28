@@ -1,0 +1,44 @@
+
+-- ****************  Condicionales
+
+-- if
+if [expresión]
+then
+   ...órdenes a ejecutar si se cumple la condición...
+elif [expresión]
+then
+   ...órdenes a ejecutar si se cumple la condición...
+else
+   ....órdenes a ejecutar en caso contrario ...
+fi
+
+ejemplo:
+directorio=$(pwd)    #Asiga la salida del comando pwd a la variable directorio
+if [ "$directorio" = "/root" ]; then
+     echo "Directorio actual: $directorio"
+else
+     echo "Directorio actual diferente de: /root"
+fi
+
+
+
+-- case
+case $var in
+v1) …  #Acción a realizar si var toma el valor v1
+;;
+v2|v3) …#Acción a realizar si var toma el valor v2 o v3
+;;
+*) …# Caso por defecto
+
+ejemplo:
+echo -n "Escribe un número entre 1 y 5: "
+read x
+case $x in
+     1) echo "Tecleaste el número uno.";;
+     2) echo "Tecleaste el número dos.";;
+     3) echo "Tecleaste el número tres.";;
+     4) echo "Tecleaste el número cuatro.";;
+     5) echo "Tecleaste el número cinco.";;
+     *) echo "Error, debias escribir un número entre 1 y 5";;
+esac
+;;

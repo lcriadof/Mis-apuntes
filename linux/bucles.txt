@@ -1,0 +1,29 @@
+
+-- ****************  Bucles
+
+-- while
+while [ expresión ] # Mientras la expresión sea cierta ...
+do
+  ...instrucciones dentro del bucle ...
+done
+
+-- until
+
+El bucle until es similar al bucle while, la diferencia es que el código se ejecuta mientras la expresión se evalúe como falsa.
+
+until [ expresión ] # Mientras la expresión sea falsa ...
+do
+  ...instrucciones dentro del bucle ...
+done
+
+-- for
+for var in lista #Por cada valor en la estructura lista se ejecuta una iteración.
+do
+ ...instrucciones dentro del bucle ...
+done
+
+ ejemplo:
+for i in 10 30 70
+do
+  echo $i
+done

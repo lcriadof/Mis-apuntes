@@ -1,0 +1,23 @@
+
+-- funciones
+Para declarar una función:
+
+function nombre:
+{ mi_código }
+
+ejemplo:
+# Se define la función hola
+function hola {
+  echo ¡Hola!
+}
+
+
+hola # Se llama a la función hola desde otro punto del programa
+
+Se pueden definir funciones con parámetros:
+function e {
+  echo $1
+}
+
+Se podría invocar como:
+e Hola
