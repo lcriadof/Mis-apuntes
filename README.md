@@ -1,4 +1,5 @@
 # Mis-apuntes
 En este repositorio guardo pequeños resúmenes de asuntos tecnológicos<br><br>
 
-1.- nociones básicas de [Bash](linux/bash.md) Scripting
+1.- Nociones básicas de [Bash](linux/bash.md) Scripting<br>
+2.- Python: [indice](python/indice.md)<br>
