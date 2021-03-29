@@ -1,4 +1,4 @@
-# Apuntes de Python
+# Apuntes de Python 3
 
 Actualmente, hay dos lenguajes de programación que cubren las necesidades de procesamiento requeridas para realizar un proyecto de análisis de datos, que son el lenguaje R y el lenguaje Python.
 <br><br>
@@ -15,4 +15,7 @@ incluye un gran conjunto de herramientas de desarrollo para Python, entre las qu
 Para ejecutar Jupyter, es preciso buscar en la instalación realizada el icono de "Jupyter Notebook" dentro del menú "Anaconda".<br><br>
 Jupyter Notebook es una aplicación web bajo el modelo cliente-servidor. Al ejecutar Jupyter, se iniciará un servicio que se ejecuta localmente, por default, en la URL http://127.0.0.1:8888, y que es accesible desde el navegador, por lo cual aparece una nueva terminal donde se ejecuta la herramienta. Este terminal no debe cerrarse mientras se esté trabajando con el Jupyter Notebook, de lo contrario el servicio será detenido.<br><br>
 <br><u>El lenguaje Python</u><br>
-1.- [variables](variables.txt)<br>
+1.- [variables](variables.txt) y tipos de [datos](datos.txt)<br>
+2.- [entrada de información](entrada.txt)<br>
+3.- [condicionales](condicionales.txt)<br>
+4.- [bucles](bucles.txt)

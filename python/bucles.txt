@@ -1,0 +1,34 @@
+# bucles
+
+-- while
+while (expresión booleana):
+   código
+
+ejemplo:
+i = 10
+while( i<=50 ):
+    print(i)
+    i+=1
+
+
+-- for
+for variable in secuencia:
+    código
+
+ejemplos:
+
+x=101
+for i in range(1,x):
+    print (i)
+
+
+for i in range(1,101):
+    if( (i%2)==0 ):
+        print(i)
+
+
+entrada = (str(input("Teclea una frase: ")))
+salida = ''
+for n in entrada:
+    salida = n + salida
+print (salida)

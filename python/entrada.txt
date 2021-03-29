@@ -1,0 +1,12 @@
+-- entrada de información
+
+entrada = input()
+print ("Mi entrada es ",entrada)
+
+deuda = input("Deuda\n")
+print(deuda)        #Devuelve el número que introduces
+
+edad = int(input('¿Cuántos años tienes?: '))  # entero
+estatura = float(input('¿Altura?: '))        # flotante
+nombre = input('¿Cómo te llamas?: ')         # cadena
+print(nombre, edad, 'años', estatura, 'm.')

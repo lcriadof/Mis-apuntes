@@ -1,0 +1,26 @@
+-- condicionales
+
+-- if
+if expresión booleana:
+    ejecutar código
+
+ejemplo:
+x = int(input("Escribe un número: "))
+if x > 0:
+    print ("El número es positivo")
+
+
+
+-- if-else
+if expresión booleana:
+   ejecutar código1
+else:
+   ejecutar código2
+
+
+ejemplo:
+x = int(input("Escribe un número: "))
+if x > 0:
+    print ("El número es positivo")
+else:
+    print ("El número es negativo")
