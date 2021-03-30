@@ -1,0 +1,44 @@
+# funciones en python
+
+-- crer función (def)
+
+#función que suma tres números y devuelve el resultado
+def suma_tres(x, y, z): # 3 argumentos posicionales
+    m1 = x + y
+    m2 = m1 + z
+    return m2
+
+
+def multiplicacion (lista):
+    multiplicacion = 1
+    for i in lista:
+        multiplicacion *= i
+    return (multiplicacion)
+lista = {1,2,3,4}
+print (multiplicacion ( lista  )) # Devuelve 24
+
+def palindromo(palabra):
+    palabra_al_reves = palabra[::-1]
+    print(palabra_al_reves)
+    if( palabra == palabra_al_reves ):
+        print("Es palindromo")
+    else:
+        print("No es palindromo")
+palindromo("Aguila")              # 'NO es palindromo'
+palindromo("arenera")             # 'es palindromo'
+
+
+def segundos_a_HMS(segundos):
+    hs = int(segundos / 3600)
+    min = int((segundos % 3600) / 60)
+    seg = int((segundos % 3600 ) % 60)
+    return (hs, min, seg)
+(h, m, s) = segundos_a_HMS(3661)
+print ("Son",h,"horas",m,"minutos",s,"segundos")  # Son 1 horas 1 minutos 1 segundos
+
+# Python proporciona un número importante de funciones internas
+max y min dan respectivamente el valor mayor y menor de una lista.
+len devuelve cuantos elementos hay en su argumento
+Funciones que permiten convertir valores de un tipo a otro: int(), float(), y str().
+chr tiene como parámetro un número entero que devuelve un carácter (cadena) cuyo código Unicode es el número entero (parámetro). Por ejemplo, chr(97) devuelve la carácter (cadena) 'a'.
+ord tiene como parámetro un carácter (cadena) que devuelve el valor ASCII de una cadena. Por ejemplo, ord ('a') devuelve el entero 97.

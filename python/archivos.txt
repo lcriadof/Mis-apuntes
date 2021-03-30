@@ -1,0 +1,28 @@
+# manejo de archivos
+
+
+-- abrir
+open:
+función open, que recibe el nombre del archivo a abrir. Por defecto, si no se indica nada, el archivo se abre en modo lectura.
+
+La función open abrirá el archivo con el nombre indicado. Si no tiene éxito, se lanzará una excepción. Si se ha podido abrir el archivo correctamente, la variable asignada a la apertura permitirá manipularlo.
+
+# lectura
+fichero= open("cuna.txt")
+for linea in fichero:
+    print(linea)
+
+# escritura
+f = open ('prueba.txt','w')
+f.write('Primer archivo')
+f.close()
+
+-- cerrar
+Al terminar de trabajar con un archivo, se debe cerrar, ya que lo que se haya escrito no se guardará realmente hasta no cerrar el archivo. Para ello, se usa close.
+
+--
+También es posible abrir un archivo en modo escritura posicionándose al final del mismo.
+Para ello, se usa la opción a con la función open. En este caso se crea el archivo si no existe,
+ pero en caso de que exista se posiciona al final, manteniendo el contenido original.
+
+open ( 'nuevo.txt' ,'a' ).write('\n Se añade al final')
