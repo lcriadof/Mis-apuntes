@@ -112,6 +112,78 @@ x = t.pop(1)
 print (t)      # Devuelve ['d', 'a', 'c', 'x']
 print (x)      # Devuelve e
 
+
+Listas por compresión:
+  Es una expresión compacta para definir listas, conjuntos y diccionarios en Python. Se trata de definir cada uno de los elementos sin tener que nombrar cada uno de ellos.
+  La forma general es: [exp for val in <coleccion> if <condicion>]
+
+
+lista = [x for x in [3,4,5]]
+print(lista)   # Devuelve [3, 4, 5]
+
+lista = [x+5 for x in [3,4,5] if x > 3]
+print(lista)  # Devuelve [9, 10]
+
+lista = [x+2 for x in range (0,10) if x > 3]
+print(lista)    # Devuelve [6, 7, 8, 9, 10, 11]
+
+letras   = ['a','b','g','h','n']
+mayusculas = [ a.upper() for a in letras ]
+mayúsculas         # Devuelve ['A', 'B', 'G', 'H', 'N']
+
+lista = [ y for x,y in [(1,2),(3,4),(5,6)]]
+print(lista)     # Devuelve [2, 4, 6]
+
 --------------
 -- Cadenas
 --------------
+Una cadena es una secuencia de caracteres y una lista es una secuencia de valores, pero una lista de caracteres no es lo mismo que una cadena. Para convertir desde una cadena a una lista de caracteres, se puede usar la función list, que divide una cadena en letras individuales.
+
+s = "casa"  # esto es una cadena
+print(s)
+t = list (s) # esto es una lista
+print (t)    # Devuelve ['c', 'a', 's', 'a']
+
+dividir una cadena en palabras, puedes usar el método split.
+s = "El camión rojo de Juan"
+tokens = s.split()
+print (tokens)          # ['El', 'camión', 'rojo', 'de', 'Juan']
+print(tokens[0])        # El
+
+s = "El-camión-rojo-de-Juan"
+t = s.split("-")
+print (t)          #  ['El', 'camión', 'rojo', 'de', 'Juan']
+
+
+Concatenar a partir de una lista en una variable de cadena
+s = ['El', 'camión', 'rojo', 'de', 'Juan']
+delimitador = " "
+delimitador.join(s)               # Devuelve 'El camión rojo de Juan'
+delimitador = "-"
+delimitador.join(s)               # Devuelve 'El-camión-rojo-de-Juan
+
+
+--------------
+-- Diccionarios
+--------------
+Un diccionario es una colección no ordenada de pares clave-valor donde la clave y el valor son objetos que pueden ser de (casi) cualquier tipo. La función dict () crea un diccionario nuevo sin elementos.
+
+diccionario = dict()  # inicializamos
+diccionario["nombre"] = "Luis"
+print(diccionario)  # {'nombre': 'Luis'}
+
+len: La función len devuelve el número de parejas clave-valor
+in:  El operador in dice si algo aparece como clave en el diccionario.
+   ejemplo2 = {"primero":"Libro","segundo":34,"tercero":(3,4)}
+   "primero" in ejemplo2                        # True
+get: Toma una clave y un valor por defecto. Si la clave aparece en el diccionario get, devuelve el valor correspondiente. En caso contrario, devuelve el valor por defecto.
+   contadores = {"naranjas":1, "limones":42, "peras":100}
+   print ( contadores.get("uvas",0))       # Devuelve 0
+   print (contadores.get("naranjas",0))    # Devuelve 1
+keys: Crea una lista con las claves de un diccionario.
+   contadores = {"naranjas":1, "limones":42, "peras":100}
+   contadores.keys()            # dict_keys(['naranjas', 'limones', 'peras'])
+items: Devuelve una lista de tuplas, cada una de las cuales es una pareja clave-valor sin ningún orden definido.
+   contadores = {"naranjas":1, "limones":42, "peras":100}
+   t = contadores.items();
+   t   # dict_items([('naranjas', 1), ('limones', 42), ('peras', 100)])
