@@ -113,6 +113,8 @@ print (t)      # Devuelve ['d', 'a', 'c', 'x']
 print (x)      # Devuelve e
 
 
+
+
 Listas por compresión:
   Es una expresión compacta para definir listas, conjuntos y diccionarios en Python. Se trata de definir cada uno de los elementos sin tener que nombrar cada uno de ellos.
   La forma general es: [exp for val in <coleccion> if <condicion>]
@@ -133,6 +135,9 @@ mayúsculas         # Devuelve ['A', 'B', 'G', 'H', 'N']
 
 lista = [ y for x,y in [(1,2),(3,4),(5,6)]]
 print(lista)     # Devuelve [2, 4, 6]
+
+T=[int(n*(n+1)/2) for n in L]
+print(T)  # [1, 3, 6, 10, 15]
 
 --------------
 -- Cadenas
@@ -187,3 +192,10 @@ items: Devuelve una lista de tuplas, cada una de las cuales es una pareja clave-
    contadores = {"naranjas":1, "limones":42, "peras":100}
    t = contadores.items();
    t   # dict_items([('naranjas', 1), ('limones', 42), ('peras', 100)])
+
+
+
+b=[1,2,3,4,5]
+c=["a","b","c","d","e"]
+dict(zip(b,c))
+{1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e'}

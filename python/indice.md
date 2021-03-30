@@ -18,6 +18,6 @@ Jupyter Notebook es una aplicación web bajo el modelo cliente-servidor. Al ejec
 1.- [variables](variables.txt) y tipos de [datos](datos.txt)<br>
 2.- [entrada de información](entrada.txt)<br>
 3.- [condicionales](condicionales.txt)<br>
-4.- [bucles](bucles.txt)
-5.- [funciones](funciones.txt)
-6.- [archivos](archivos.txt)
+4.- [bucles](bucles.txt)<br>
+5.- [funciones](funciones.txt)<br>
+6.- [archivos](archivos.txt)<br>
