@@ -3,13 +3,12 @@
 import pandas as pd
 
 #Abrir un fichero csv
-ejemplo = pd.read_csv("201612_detalle.csv", delimiter=";", encoding="iso-8859_2")
+ejemplo = pd.read_csv("SacramentocrimeJanuary2006.csv", delimiter=",", encoding="iso-8859_2")
 #Mostramos los 5 primeros registros
-ejemplo.head(5)
+print(ejemplo.head(5))
 
-# si queremos visualizar todo
-ejemplo
-
+# si queremos visualizar la totalidad del fichero
+print (ejemplo)
 
 
 # Mostramos las columnas y la dimensión del data frame
