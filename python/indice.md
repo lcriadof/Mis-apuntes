@@ -19,4 +19,4 @@ Jupyter Notebook es una aplicación web bajo el modelo cliente-servidor. Al ejec
 3.- [condicionales](condicionales.txt)<br>
 4.- [bucles](bucles.txt)<br>
 5.- [funciones](funciones.txt)<br>
-6.- [ficheros](archivos.txt); [excel](excel.txt)
+6.- [ficheros](archivos.txt)| otros formatos: CSV [ejemplo 1](csv/ejemplocsv.py), [enenuciado2](csv/movercsv.txt)[ejemplo 2](csv/movercsv.py)
