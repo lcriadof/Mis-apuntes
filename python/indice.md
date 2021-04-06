@@ -1,5 +1,4 @@
 # Apuntes de Python 3
-
 Actualmente, hay dos lenguajes de programación que cubren las necesidades de procesamiento requeridas para realizar un proyecto de análisis de datos, que son el lenguaje R y el lenguaje Python.
 <br><br>
 Python es un lenguaje de propósito general al que se le ha proporcionado, en forma de librerías, toda la funcionalidad necesaria para llevar a cabo análisis de datos de cualquier complejidad. Presenta funciones y estructura de datos eficientes semejantes al lenguaje R.<br>
