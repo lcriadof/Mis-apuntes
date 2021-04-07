@@ -22,4 +22,10 @@ while True:
         if ("status" in js and js['status']=="fail"):
             print(" --- error ---> ",js['message'])
         else:
-            print("ciudad: ",js['city'])
+            print("localidad: ",js['city'])
+            print("region:  ", js['regionName']," (",js['region'],")")
+            print("Pais: ", js['country']," (",js['countryCode'],")")
+            print("zona horaria: ", js['timezone'])
+            print("operador de telefonía: ", js['isp'])
+            print("latitud: ", js['lat'])
+            print("longitud: ", js['lon'])
