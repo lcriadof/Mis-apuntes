@@ -21,6 +21,12 @@ Jupyter Notebook es una aplicación web bajo el modelo cliente-servidor. Al ejec
 5.- [funciones](funciones.txt)<br>
 6.- [acceso a URLs](urls.py)<br>
 7.- [ficheros](archivos.txt) <br>
-&#8195;&#8195;otros formatos: CSV [ejemplo 1](csv/ejemplocsv.py), [ejemplo 2](csv/movercsv.py)<br>
-&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;&#8195;JSON [ejemplo](json/geoip.py)<br>
-
+&#8195;&#8195;otros formatos:<br>
+&#8195;&#8195;&#8195;&#8195;
+&#8195;1.- CSV [ejemplo 1](csv/ejemplocsv.py), 
+[ejemplo 2](csv/movercsv.py)<br>
+&#8195;&#8195;&#8195;&#8195;
+&#8195;2.- [JSON](json/json.md) [ejemplo](json/geoip.py)<br>
+&#8195;&#8195;&#8195;&#8195;
+&#8195;3.- [XML](xml/xml.md) <br>
+8.- [Stack científico](stackCientifico/stack.md)

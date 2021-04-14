@@ -45,3 +45,6 @@ JsonDatos='{"nombre":"Sofia","matriculado":true,"asignaturas":34,"ID":null}'<br>
 import json<br>
 PythonDatos=json.dumps(JsonDatos) # escritura <br>
 print (PythonDatos)<br>
+
+
+[ejemplo práctico](geoip.py)
