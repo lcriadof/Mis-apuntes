@@ -6,6 +6,7 @@
 # En este sentido, proporciona funciones que operan sobre ndarrays.
 
 import numpy as np
+import numpy.random as r
 
 def caracteristicas(matriz):
     print()
@@ -141,4 +142,27 @@ if opcion == 5:
 
 # estadisticas
 if opcion == 6:
-    print("por aqui")
+    a = np.array([[100, 5, 6, 52],
+                  [80, 65, 4, 61]])
+    print(a)
+    print("suma: ",np.sum(a))  # Suma todos los elementos
+    print("valor mínimo: ",np.min(a), "posición: ", np.argmin(a))  # Valor mínimo y su posición
+    print("valor máximo: ",np.max(a), "posición: ", np.argmax(a))  # Valor máximo y su posición
+    print("valor medio: ",np.mean(a))  # Media del array, considerando todos su valores
+    print("media por columnas: ",np.mean(a, axis=0))  # Media por columnas
+    print("varianza por columnas: ",np.var(a, axis=0))  # Varianza por columnas
+    print("Desviación estandar por columnas: ",np.std(a, axis=0))  # Desviación estandar (por columnas)
+    print("Mediana por filas: ",np.median(a, axis=1))  # Mediana por filas
+    print()
+    a = np.array([[2, 3, 4, 5], [4, 5, 6, 6]])
+    print(a)
+    print("correlación de la transpuesta: ",np.corrcoef(a))  # correlación de la transpuesta
+    print("covarianza de la primera columna: ",np.cov(a[:, 0]))  # covarianza de la primera columna
+    print()
+    s = r.rand(10)  # Genera los números aleatorios de una normal (0,1)
+    print(s)
+    t = r.normal(size=(5, 1))  # Genera un array con números pertenecientes a una normal
+    print(t)
+    k = r.normal()  # Genera un número perteneciente a una normal
+    print(k)
+    # ultimo ejemplo  :  39
