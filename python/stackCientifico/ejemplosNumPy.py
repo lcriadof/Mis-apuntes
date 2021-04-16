@@ -25,6 +25,7 @@ print("3.- Acceso en arrays unidimensionales")
 print("4.- iterar sobre los elementos de un array")
 print("5.- redimensionar array")
 print("6.- estadisticas")
+print("7.- intercambiar filas de un array")
 opcion = int(input('opción ¿?: '))
 
 
@@ -33,6 +34,7 @@ opcion = int(input('opción ¿?: '))
 if opcion==1:
     print("---------------  ejemplos de tipos de matrices")
     a = np.array( [2,3,4] )
+    print("tipo: ",type(a))
     caracteristicas(a)
 
     b = np.array( [[2,3,4], [5,6,7]] )
@@ -49,6 +51,27 @@ if opcion==1:
     c = np.empty((4,4)) # empty: crea un array con valores sin inicializar cuyo contenido es aleatorio.
     print("matriz aleatoria ",c)
 
+    # array a partir de una tupla
+    print()
+    mi_tupla = (1, 58, 63, 45)
+    print(type(mi_tupla))
+    arr_tuple = np.array(mi_tupla)
+    print(arr_tuple)
+    print(type(arr_tuple))
+
+   # array a partir de diccionario
+    print()
+    my_dict = {'one': 'uno',
+           'two': 'dos',
+           'three': 'tres'}
+    print(my_dict.items())
+    print(type(my_dict))
+    dict_list = list(my_dict.items()) # pasamos el diccionario a tupla
+    print(dict_list)
+    print(type(dict_list))
+    arr_dict = np.array(dict_list) # finalmente lo pasamos a array
+    print(arr_dict)
+    print(type(arr_dict))
 
 # operaciones con matrices
 if opcion==2:
@@ -165,4 +188,18 @@ if opcion == 6:
     print(t)
     k = r.normal()  # Genera un número perteneciente a una normal
     print(k)
-    # ultimo ejemplo  :  39
+
+# itercambiar filas de un array
+if opcion == 7:
+    print()
+    A = np.arange(20).reshape(5, 4)
+    print(A)
+    print(A[[0,1]])
+    print(A[[1,0]])
+    # intercambiamos
+    A[[0, 1]] = A[[1, 0]]
+    print()
+    print(A)
+    print(A[[0, 1]])
+    print(A[[1, 0]])
+
