@@ -6,4 +6,6 @@ El trabajo de la ciencia de datos se desarrolla casi íntegramente en el seno de
 
 Dentro de los lenguajes de programación dedicados a la estadística, uno de los más representativos y eficientes es R.
 
-Utilizare RStudio y R-notebook (integra el código con los resultados de las ejecuciones).
+Utilizare RStudio con el formato R-notebook, ficheros con extensión "Rmd" (que integra el código con los resultados de las ejecuciones al igual que jupiter).
+
+
