@@ -1,7 +1,8 @@
 # Apuntes de R
-# todas las pruebas han seido realizadas con RStudio
+### Todas las pruebas han sido realizadas con RStudio
 
-El análisis estadístico es una de las herramientas centrales en la ciencia de datos. Los modelos y algoritmos que se usan tienen su base en la estadística matemática, de modo que conocer los fundamentos en los que se basan es imprescindible para desarrollarlos y controlarlos.
+
+El análisis estadístico es una de las herramientas centrales en la CIENCIA DE DATOSs. Los modelos y algoritmos que se usan tienen su base en la estadística matemática, de modo que conocer los fundamentos en los que se basan es imprescindible para desarrollarlos y controlarlos.
 
 El trabajo de la ciencia de datos se desarrolla casi íntegramente en el seno de la programación; ya que, para tratar con los datos, analizarlos y explotarlos, usando algoritmos a una escala media-alta, es inviable el análisis por inspección.
 
